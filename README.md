@@ -1,7 +1,7 @@
-# starter-node-bot
+# Botify - the Slack Bot
 
 ## Overview
-A simple starting point for creating a Beep Boop hostable, Node.js based Slack bot with botkit
+Botify is Node.js Slack bot hosted on Beep Boop using Slapp.
 
 Visit [Beep Boop](https://beepboophq.com/docs/article/overview) to get the scoop on the the Beep Boop hosting platform. The Slack API documentation can be found [here](https://api.slack.com/).
 
@@ -14,7 +14,7 @@ Visit [Beep Boop](https://beepboophq.com/docs/article/overview) to get the scoop
 
 ### Run locally
 	npm install
-	SLACK_TOKEN=<YOUR_SLACK_TOKEN> npm start
+	PORT=<PORT TO RUN ON> npm start
 
 Things are looking good if the console prints something like:
 
@@ -23,15 +23,17 @@ Things are looking good if the console prints something like:
     ** API CALL: https://slack.com/api/chat.postMessage
 
 ### Run locally in Docker
-	docker build -t starter-node .`
-	docker run --rm -it -e SLACK_TOKEN=<YOUR SLACK API TOKEN> starter-node
+	docker build -t botify .`
+	docker run --rm -it -e PORT=<PORT TO RUN ON> botify
 
 ### Run in BeepBoop
 If you have linked your local repo with the Beep Boop service (check [here](https://beepboophq.com/0_o/my-projects)), changes pushed to the remote master branch will automatically deploy.
 
 ## Acknowledgements
 
-This code uses the [botkit](https://github.com/howdyai/botkit) npm module by the fine folks at Howdy.ai.
+This code uses:
+
+[slapp](https://github.com/BeepBoopHQ/slapp)
 
 ## License
 
