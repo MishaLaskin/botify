@@ -5,6 +5,8 @@ Botify is Node.js Slack bot hosted on Beep Boop using Slapp.
 
 Visit [Beep Boop](https://beepboophq.com/docs/article/overview) to get the scoop on the the Beep Boop hosting platform. The Slack API documentation can be found [here](https://api.slack.com/).
 
+**Note:** This app is still a work in progress
+
 ## Assumptions
 * You have already signed up with [Beep Boop](https://beepboophq.com) and have a local fork of this project.
 
